@@ -1,7 +1,6 @@
-# Apprenant
+# Ping-Pong
 
-Application de support d'enseignement à destination d'adultes en situation d'illettrisme.
-
+Jeu de réflexe pour 2 personnes. Le but est de se renvoyer un pixel lumineux dont la vitesse augmente avec le temps.
 ## Installer les dépendances
 
 `docker-compose run --rm frontend npm install`
