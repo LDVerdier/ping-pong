@@ -1,11 +1,10 @@
-import { Cell } from './game/Cell';
+import { Cells } from './game/Cells';
 
 function App() {
   return (
     <>
-      <div>Hello World</div>
-
-      <Cell />
+      <button type="button">Start game</button>
+      <Cells />
     </>
   );
 }

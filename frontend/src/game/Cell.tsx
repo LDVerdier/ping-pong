@@ -1,15 +1,5 @@
-import { useEffect, useState } from 'react';
+import { StyledCell as StyledCell } from '../views/Cell';
 
-import { Cell as StyledCell } from '../views/Cell';
-
-export const Cell = () => {
-  const [isActive, setIsActive] = useState(false);
-
-  useEffect(() => {
-    if (isActive) {
-      setIsActive(false);
-    }
-  }, [isActive]);
-
-  return <StyledCell isActive={isActive} onClick={() => setIsActive(true)} />;
+export const Cell = ({ isActive }: { isActive: boolean }) => {
+  return <StyledCell isActive={isActive} />;
 };
